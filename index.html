@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="png" href="icon image.png" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">🎵 Music</div>
+        <nav>
+          <a href="#" class="active">Home</a>
+          <a href="#">Search</a>
+          <a href="#">Library</a>
+          <a href="#">My Playlists</a>
+          <a href="#">Favourites</a>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="header">
+          <h1>What's Your Mood?</h1>
+          <p>Our recommendations based on your music taste</p>
+        </header>
+        <section class="mood">
+          <div class="mood-item">Soothing</div>
+          <div class="mood-item">Instrumentals</div>
+          <div class="mood-item">High Bass</div>
+          <div class="mood-item">Night Party</div>
+          <div class="mood-item">Retro 90s</div>
+          <div class="mood-item">Happy</div>
+        </section>
+      </main>
+      <footer class="music-player">
+        <div class="current-song">
+          <img src="cover.png" alt="Cover" class="cover" />
+          <div class="song-info">
+            <div class="song-title">Faded (Instrumental)</div>
+            <div class="song-artist">Music labels</div>
+          </div>
+          <audio id="audio" controls>
+            <source src="Faded-Instrumental.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <button id="playPause" class="control-btn">Play/Pause</button>
+      </footer>
+    </div>
+    <script src="player.js"></script>
+  </body>
+</html>
